@@ -10,7 +10,7 @@ jobs:
   header:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@v3.6
+      - uses: lowlighter/metrics@latest
         with:
           filename: header.svg
           # You'll need to setup a personal token in your secrets.
