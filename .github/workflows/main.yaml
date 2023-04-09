@@ -19,7 +19,6 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
           # Options
-          user: abdellah-hiit
           template: classic
           base: header
           config_timezone: UTC
@@ -36,7 +35,6 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
           # Options
-          user: abdellah-hiit
           template: classic
           base: activity, community
           config_timezone: UTC
@@ -53,7 +51,6 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
           # Options
-          user: abdellah-hiit
           template: classic
           base: ""
           config_timezone: UTC
@@ -72,7 +69,6 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
           # Options
-          user: abdellah-hiit
           template: classic
           base: ""
           config_timezone: UTC
@@ -91,7 +87,6 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
           # Options
-          user: abdellah-hiit
           template: classic
           base: metadata
           config_timezone: UTC
@@ -108,7 +103,6 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
           # Options
-          user: abdellah-hiit
           template: classic
           base: repositories
           config_timezone: UTC
