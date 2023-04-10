@@ -20,7 +20,7 @@ jobs:
 
           # Options
           template: classic
-          base: header
+          base: header, activity, community, repositories, metadata
           config_timezone: UTC
 
   acti_comm:
@@ -55,7 +55,7 @@ jobs:
           base: ""
           config_timezone: UTC
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+          plugin_isocalendar_duration: full-year
 
   issue_pr_lang:
     runs-on: ubuntu-latest
@@ -63,17 +63,18 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: metric_issue_pr_lang.svg
-          # You'll need to setup a personal token in your secrets.
           token: ${{ secrets.METRICS_TOKEN }}
-          # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
           # Options
           template: classic
           base: ""
           config_timezone: UTC
-          plugin_followup: yes
           plugin_languages: yes
+          plugin_languages_ignored: >-
+            html, css, tex, less, qmake, lex, cmake, shell, gnuplot
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 5
 
   metadata:
     runs-on: ubuntu-latest
@@ -81,9 +82,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: metric_metadata.svg
-          # You'll need to setup a personal token in your secrets.
           token: ${{ secrets.METRICS_TOKEN }}
-          # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
           # Options
@@ -97,12 +96,23 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: metric_repositories.svg
-          # You'll need to setup a personal token in your secrets.
           token: ${{ secrets.METRICS_TOKEN }}
-          # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
           # Options
           template: classic
           base: repositories
           config_timezone: UTC
+
+  line_code_history:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metric_lines_history.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: "repositories"
+          plugin_lines: yes
+          plugin_lines_sections: repositories, history
+          plugin_lines_repositories_limit: 2
+          plugin_lines_history_limit: 1
