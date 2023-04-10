@@ -1,5 +1,5 @@
 # Visit https://github.com/lowlighter/metrics/blob/master/action.yml for full reference
-name: Get all latest stats SVG
+name: Get all statistics SVG
 
 on:
   # Schedule updates
@@ -13,9 +13,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: header.svg
-          # You'll need to setup a personal token in your secrets.
           token: ${{ secrets.METRICS_TOKEN }}
-          # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
           # Options
@@ -29,9 +27,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics_acti_comm.svg
-          # You'll need to setup a personal token in your secrets.
           token: ${{ secrets.METRICS_TOKEN }}
-          # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
           # Options
@@ -45,9 +41,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: metric_iso_calender.svg
-          # You'll need to setup a personal token in your secrets.
           token: ${{ secrets.METRICS_TOKEN }}
-          # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
           # Options
