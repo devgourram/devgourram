@@ -15,7 +15,11 @@ You can click the Preview link to take a look at your changes.
 ![Metrics](/metric_lines_history.svg)
 
 
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
+
+# My Contribution to HiitConsulting Organization
 
 ![Metrics](/hiitco/header.svg)
 ![Metrics](/hiitco/metrics_acti_comm.svg)
@@ -24,10 +28,7 @@ You can click the Preview link to take a look at your changes.
 ![Metrics](/hiitco/metric_metadata.svg)
 ![Metrics](/hiitco/metric_repositories.svg)
 
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
 
-# My Contribution to HiitConsulting Organization
 ![Code Time](http://img.shields.io/badge/Code%20Time-32%20mins-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-213-blue)
