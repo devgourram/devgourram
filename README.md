@@ -15,7 +15,8 @@ You can click the Preview link to take a look at your changes.
 ![Metrics](/metric_lines_history.svg)
 
 
-***HIITCO Contribution***
+** ![ca-24fh5t579blnrpbhjuvm8afer9ymey22102020024427](https://user-images.githubusercontent.com/26623378/231753893-8b72a01a-2283-4d0a-ae05-be0336416d05.jpg)
+HIITCO Contribution**
 
 ![Metrics](/hiitco/header.svg)
 ![Metrics](/hiitco/metrics_acti_comm.svg)
