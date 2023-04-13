@@ -15,8 +15,7 @@ You can click the Preview link to take a look at your changes.
 ![Metrics](/metric_lines_history.svg)
 
 
-** ![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
-HIITCO Contribution**
+![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
 
 ![Metrics](/hiitco/header.svg)
 ![Metrics](/hiitco/metrics_acti_comm.svg)
